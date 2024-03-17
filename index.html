@@ -13,7 +13,7 @@
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -24,23 +24,43 @@
         <section id="about" class="section">
             <div class="container">
                 <h2>About Me</h2>
-                <p>I am a second-year Computer Engineering student at Gebze Technical University. Currently, I am developing my skills through coursework at 42 Kocaeli Software Schools situated in Bilişim Vadisi, Gebze. During these educations, I have developed projects using C, C++, and Java. I invite you to take a glance at some of my notable projects.</p>
+                <p>I am a second-year Computer Engineering student at Gebze Technical University. Currently, I am developing my skills through coursework at 42 Kocaeli Software Schools situated in Bilişim Vadisi, Gebze. During these educations, I have developed projects using C, C++, and Java. If you interested take a glance at some of my notable projects.</p>
             </div>
         </section>
 
-        <section id="portfolio" class="section">
+        <section id="projects" class="section">
             <div class="container">
-                <h2>Portfolio</h2>
-                <!-- Your portfolio items will go here -->
-                <div class="portfolio-item">
-                    <img src="images/project1.png" alt="Project 1">
-                    <h3>Project 1</h3>
-                    <p>Description of Project 1</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="images/project2.png" alt="Project 2">
-                    <h3>Project 2</h3>
-                    <p>Description of Project 2</p>
+                <h2>Projects</h2>
+                <div id="projects-container" onscroll="changeBackground()">
+                    <div class="portfolio-item">
+                        <div class="project-info">
+                            <h3>Project 1</h3>
+                            <p>Description of Project 1</p>
+                        </div>
+                        <img src="images/so1.png" alt="Project 1">
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="project-info">
+                            <h3>Project 2</h3>
+                            <p>Description of Project 2</p>
+                        </div>
+                        <img src="images/so2.png" alt="Project 2">
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="project-info">
+                            <h3>Project 3</h3>
+                            <p>Description of Project 3</p>
+                        </div>
+                        <img src="images/project3.png" alt="Project 3">
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="project-info">
+                            <h3>Project 4</h3>
+                            <p>Description of Project 4</p>
+                        </div>
+                        <img src="images/project4.png" alt="Project 4">
+                    </div>
+                    <!-- Add more projects as needed -->
                 </div>
             </div>
         </section>
@@ -58,5 +78,7 @@
             <p>&copy; 2024 John Doe. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

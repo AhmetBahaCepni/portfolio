@@ -38,7 +38,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #646464;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -50,18 +50,22 @@ main {
     padding: 40px 0;
 }
 
-.section h2 {
-    margin-bottom: 20px;
-}
-
 .portfolio-item {
     margin-bottom: 40px;
+    overflow: hidden; /* Clear floats */
+}
+
+.project-info {
+    float: left;
+    width: calc(100% - 150px); /* Adjust width as needed */
 }
 
 .portfolio-item img {
-    max-width: 100%;
+    float: right;
+    max-width: 150px; /* Adjust image width as needed */
     height: auto;
     border-radius: 5px;
+    margin-left: 20px; /* Adjust margin as needed */
 }
 
 footer {
@@ -69,4 +73,11 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+}
+
+#projects-container {
+    max-height: 400px; /* Set a maximum height for the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: "gray";
+    transition: background-color 0.3s ease; /* Add transition for smooth background color change */
 }
