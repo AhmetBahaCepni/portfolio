@@ -17,6 +17,7 @@ li {
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+    font-family: 'opensans-bold', sans-serif;
 }
 
 body {
@@ -102,12 +103,14 @@ a:hover {
 
 #about p {
     line-height: 30px;
-    color: #7A7A7A;
+    color: #8f8f8f
 }
 
-.profile-pic {
-    max-width: 100%;
-    height: auto;
+#about .profile-pic {
+    position: relative;
+    width: 185px;
+    height: 195px;
+    border-radius: 100%;
 }
 
 .row {
@@ -115,7 +118,7 @@ a:hover {
     max-width: none;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
@@ -145,6 +148,12 @@ a:hover {
     padding-bottom: 24px;
     border-bottom: 1px solid #E8E8E8
 
+}
+
+.project {
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E8E8E8
 }
 
 .resume-section {
@@ -178,7 +187,7 @@ a:hover {
  #resume .main-col {
     padding-right: 10%;
  }
- 
+
  .education,
  .work {
     margin-bottom: 48px;
@@ -187,11 +196,11 @@ a:hover {
  }
  
  #resume .info {
-    font: 16px/24px 'librebaskerville-italic', serif;
+    font: 16px / 24px 'librebaskerville-italic', serif;
     color: #6E7881;
     margin-bottom: 18px;
     margin-top: 9px;
- }
+}
  
  #resume .info span {
     margin-right: 5px;
@@ -244,6 +253,12 @@ a:hover {
 
 .social-links a:hover {
     color: #ccc;
+}
+
+.project-image {
+    width: 100%; /* Adjust the width of the project images */
+    max-width: 400px; /* Set a maximum width if needed */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Responsive styles */
