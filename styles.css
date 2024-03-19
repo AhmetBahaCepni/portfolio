@@ -212,6 +212,15 @@ a:hover {
     margin-top: 6px;
  }
 
+ #resume p {
+    margin-bottom: 18px;
+    margin-top: 9px;
+    font: 16px/24px 'librebaskerville-italic', serif;
+    word-spacing: 2px;
+    line-height: 30px;
+    max-width: 60vw;
+ }
+
 /* Skills section */
 .skill {
     padding: 50px 0;
@@ -258,7 +267,8 @@ a:hover {
 .project-image {
     width: 100%; /* Adjust the width of the project images */
     max-width: 400px; /* Set a maximum width if needed */
-    height: auto; /* Maintain aspect ratio */
+    height: auto; /* Adjust the height of the project images */
+    
 }
 
 /* Responsive styles */

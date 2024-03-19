@@ -14,7 +14,10 @@
             <div class="three columns"><img class="profile-pic" src="images/pp.png" alt=""></div>
             <div class="nine columns main-col">
                 <h2>About Me</h2>
-                <p>I am a second-year Computer Engineering student at Gebze Technical University. Currently, I am developing my skills through coursework at 42 Kocaeli Software Schools situated in Bilişim Vadisi, Gebze. During these educations, I have developed projects using C, C++, and Java. If you interested take a glance at some of my notable projects.</p>
+                <p>I am a second-year Computer Engineering student at Gebze Technical University. Currently, I am
+                    developing my skills through coursework at 42 Kocaeli Software Schools situated in Bilişim Vadisi,
+                    Gebze. During these educations, I have developed projects using C, C++, and Java. If you interested
+                    take a glance at some of my notable projects.</p>
             </div>
         </div>
     </section>
@@ -51,7 +54,10 @@
                     <div class="twelve columns">
                         <h3>IEEE GTU</h3>
                         <p class="info">Backend Team<span>•</span> <em class="date">Jul 2022 - Present</em></p>
-                        <p><span>IEEE GTU APP aims to provide real-time and comprehensive information about the Gebze Technical University and IEEE GTU Student Branch. Stay informed with the latest developments and daily essentials like public transport or school cafeteria.<br></span></p>
+                        <p><span>IEEE GTU APP aims to provide real-time and comprehensive information about the Gebze
+                                Technical University and IEEE GTU Student Branch. Stay informed with the latest
+                                developments and daily essentials like public transport or school cafeteria.<br></span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -61,13 +67,66 @@
                 <h1><span>Projects</span></h1>
             </div>
             <div class="nine columns main-col">
-                <div class="nine columns">
-                    <h3>cub3d</h3>
-                    <p class="info">Raycasting Game Engine</p>
-                    <p><span>Raycasting engine written in C. The project is inspired by the world-famous game Wolfenstein 3D. The goal is to make a dynamic view inside a maze, in which you'll have to find your way.<br></span></p>
+                <div class="row project">
+                    <div class="nine columns">
+                        <h3>cub3D</h3>
+                        <p class="info">3D RayCaster Game</p>
+                        <p><span>cub3D is a 3D game written in C. It uses the raycasting algortihm which is used in the
+                                first FPS game Wolfenstein 3D and uses minilibx library to draw to the screen. The goal
+                                is to make a dynamic view inside a maze.</span></p>
+                        <p><span>If we need to explain raycasting breifly, after creating the 2d world map, we
+                                cast rays from the player's position to the walls. Then we
+                                calculate the distance between the player and the wall for each ray. this way we
+                                can draw closer walls bigger and further walls smaller. This way we create a
+                                3D effect.</span></p>
+                    </div>
+                    <div class="three columns">
+                        <img class="project-image" src="images/cub3d.gif" alt="Project Image">
+                    </div>
                 </div>
-                <div class="three columns">
-                    <img class="project-image" src="images/project1.png" alt="Project Image">
+                <div class="row project">
+                    <div class="nine columns">
+                        <h3>Minishell</h3>
+                        <p class="info">Own Unix Shell</p>
+                        <p><span>Minishell is a simple shell written in C. The goal is to make a shell like bash or zsh.
+                                Minishell can handle commands, pipes, redirections and heredocs just like a real
+                                shell.</span></p>
+                        <p><span>We used processes and
+                                many
+                                system calls in this project such as fork, execve, dups, wait, signals, etc.
+                                Processes
+                                needed to execute non-built-in commands without terminating the
+                                shell.<br></span></p>
+                    </div>
+                    <div class="three columns">
+                        <img class="project-image" src="images/giphy.gif" alt="Project Image">
+                    </div>
+                </div>
+                <div class="row project">
+                    <div class="nine columns">
+                        <h3>Internet Relay Chat</h3>
+                        <p class="info">IRC Server</p>
+                        <p><span>IRC server written in CPP. The goal is to make a simple server that can handle multiple
+                                clients and manage their messages.<br></span></p>
+                    </div>
+                    <div class="three columns">
+                        <img class="project-image" src="images/giphy.gif" alt="Project Image">
+                    </div>
+                </div>
+                <div class="row project">
+                    <div class="nine columns">
+                        <h3>So_long</h3>
+                        <p class="info">2D Maze Game</p>
+                        <p><span> So_long is a simple 2D game written in C. The game uses the minilibx library to draw
+                                to
+                                the screen.</span></p>
+                        <p><span>There are different maps in the game and the goal is to collect all the
+                                collectable items and reach the exit.</span></p>
+                    </div>
+                    <div class="three columns">
+                        <img class="project-image" src="images/so1.png" alt="Project Image">
+                    </div>
+                </div>
             </div>
         </div>
 </body>
