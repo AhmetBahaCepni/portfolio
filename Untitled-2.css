@@ -1,0 +1,261 @@
+/* Reset CSS */
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+/* General styles */
+.row {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+p {
+    font-family: 'librebaskerville-italic', serif;
+}
+
+/* Header styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'opensans-bold', sans-serif;
+    font-weight: normal;
+    color: #313131;
+}
+
+h1 {
+    font-size: 38px;
+    line-height: 42px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+h6 {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+/* About section */
+#about {
+    background-color: #2b2b2b;;
+    padding: 50px 0;
+    color: #fff;
+}
+
+#about h2 {
+    FONT: 22px/30px 'opensans-bold', sans-serif;
+    color : #fff;
+}
+
+#about a, #about a:visited {
+    color: #fff;
+}
+
+#about p {
+    line-height: 30px;
+    color: #7A7A7A;
+}
+
+.profile-pic {
+    max-width: 100%;
+    height: auto;
+}
+
+.row {
+    width: auto;
+    max-width: none;
+    margin: 0 -20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.columns {
+    position: relative;
+    padding: 0 20px;
+    min-height: 1px;
+    float: left;
+}
+
+.main-col {
+    flex: 2;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Resume section */
+#resume {
+    padding-top: 90px;
+    padding-bottom: 72px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.education, .work {
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E8E8E8
+
+}
+
+.resume-section {
+    margin-bottom: 30px;
+}
+
+.resume-item {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#resume h1 {
+    font: 18px/24px 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+ }
+ 
+ #resume h1 span {
+    border-bottom: 3px solid #11ABB0;
+    padding-bottom: 6px;
+ }
+ 
+ #resume h3 {
+    font: 25px/30px 'opensans-bold', sans-serif;
+ }
+ 
+ #resume .header-col {
+    padding-top: 9px;
+ }
+ 
+ #resume .main-col {
+    padding-right: 10%;
+ }
+ 
+ .education,
+ .work {
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E8E8E8;
+ }
+ 
+ #resume .info {
+    font: 16px/24px 'librebaskerville-italic', serif;
+    color: #6E7881;
+    margin-bottom: 18px;
+    margin-top: 9px;
+ }
+ 
+ #resume .info span {
+    margin-right: 5px;
+    margin-left: 5px;
+ }
+ 
+ #resume .date {
+    font: 15px/24px 'opensans-regular', sans-serif;
+    margin-top: 6px;
+ }
+
+/* Skills section */
+.skill {
+    padding: 50px 0;
+}
+
+.skill ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill li {
+    margin-bottom: 10px;
+}
+
+/* Contact section */
+#contact {
+    background-color: #444;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.social-links a {
+    color: #fff;
+}
+
+.social-links a:hover {
+    color: #ccc;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+}
