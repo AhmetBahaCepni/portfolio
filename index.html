@@ -1,134 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d0e10">
+  <meta name="description" content="Ahmet Baha Çepni is a low-level network engineer building clear, useful software close to the system.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ahmet Baha Çepni — Low-Level Network Engineer">
+  <meta property="og:description" content="Networks, systems, and software that feels good to use.">
+  <meta property="og:url" content="https://ahmetbahacepni.com/">
+  <link rel="canonical" href="https://ahmetbahacepni.com/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="media/avatar.jpg" as="image" type="image/jpeg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Ahmet Baha Çepni — Low-Level Network Engineer</title>
 </head>
-
 <body>
-    <section id="about">
-        <div class="row">
-            <div class="three columns"><img class="profile-pic" src="images/pp.png" alt=""></div>
-            <div class="nine columns main-col">
-                <h2>About Me</h2>
-                <p>I am a second-year Computer Engineering student at Gebze Technical University. Currently, I am
-                    developing my skills through coursework at 42 Kocaeli Software Schools situated in Bilişim Vadisi,
-                    Gebze. During these educations, I have developed projects using C, C++, and Java. If you interested
-                    take a glance at some of my notable projects.</p>
-            </div>
-        </div>
-    </section>
-    <section id="resume">
-        <div class="row education">
-            <div class="three columns header-col">
-                <h1><span>Education</span></h1>
-            </div>
-            <div class="nine columns main-col">
-                <div class="row item">
-                    <div class="twelve columns">
-                        <h3>Gebze Technical University</h3>
-                        <p class="info">Computer Engineering<span>•</span> <em class="date">2021 -
-                                2026</em></p>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="row item">
-                    <div class="twelve columns">
-                        <h3>Ecole 42</h3>
-                        <p class="info"><span>Learn to Code</span> <em class="date">2022 -
-                                Present</em></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row work">
-            <div class="three columns header-col">
-                <h1><span>Experience</span></h1>
-            </div>
-            <div class="nine columns main-col">
-                <div class="row item">
-                    <div class="twelve columns">
-                        <h3>IEEE GTU</h3>
-                        <p class="info">Backend Team<span>•</span> <em class="date">Jul 2022 - Present</em></p>
-                        <p><span>IEEE GTU APP aims to provide real-time and comprehensive information about the Gebze
-                                Technical University and IEEE GTU Student Branch. Stay informed with the latest
-                                developments and daily essentials like public transport or school cafeteria.<br></span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row project">
-            <div class="three columns header-col">
-                <h1><span>Projects</span></h1>
-            </div>
-            <div class="nine columns main-col">
-                <div class="row project">
-                    <div class="nine columns">
-                        <h3>cub3D</h3>
-                        <p class="info">3D RayCaster Game</p>
-                        <p><span>cub3D is a 3D game written in C. It uses the raycasting algortihm which is used in the
-                                first FPS game Wolfenstein 3D and uses minilibx library to draw to the screen. The goal
-                                is to make a dynamic view inside a maze.</span></p>
-                        <p><span>If we need to explain raycasting breifly, after creating the 2d world map, we
-                                cast rays from the player's position to the walls. Then we
-                                calculate the distance between the player and the wall for each ray. this way we
-                                can draw closer walls bigger and further walls smaller. This way we create a
-                                3D effect.</span></p>
-                    </div>
-                    <div class="three columns">
-                        <img class="project-image" src="images/cub3d.gif" alt="Project Image">
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="nine columns">
-                        <h3>Minishell</h3>
-                        <p class="info">Own Unix Shell</p>
-                        <p><span>Minishell is a simple shell written in C. The goal is to make a shell like bash or zsh.
-                                Minishell can handle commands, pipes, redirections and heredocs just like a real
-                                shell.</span></p>
-                        <p><span>We used processes and
-                                many
-                                system calls in this project such as fork, execve, dups, wait, signals, etc.
-                                Processes
-                                needed to execute non-built-in commands without terminating the
-                                shell.<br></span></p>
-                    </div>
-                    <div class="three columns">
-                        <img class="project-image" src="images/minishell.png" alt="Project Image">
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="nine columns">
-                        <h3>Internet Relay Chat</h3>
-                        <p class="info">IRC Server</p>
-                        <p><span>IRC server written in CPP. The goal is to make a simple server that can handle multiple
-                                clients and manage their messages.<br></span></p>
-                    </div>
-                    <div class="three columns">
-                        <img class="project-image" src="images/giphy.gif" alt="Project Image">
-                    </div>
-                </div>
-                <div class="row project">
-                    <div class="nine columns">
-                        <h3>So_long</h3>
-                        <p class="info">2D Maze Game</p>
-                        <p><span> So_long is a simple 2D game written in C. The game uses the minilibx library to draw
-                                to
-                                the screen.</span></p>
-                        <p><span>There are different maps in the game and the goal is to collect all the
-                                collectable items and reach the exit.</span></p>
-                    </div>
-                    <div class="three columns">
-                        <img class="project-image" src="images/so1.png" alt="Project Image">
-                    </div>
-                </div>
-            </div>
-        </div>
-</body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="site-header" id="home">
+      <a class="identity" href="#home" aria-label="Ahmet Baha Çepni, back to top">
+        <img class="avatar" src="media/avatar.jpg" alt="Portrait of Ahmet Baha Çepni" width="48" height="48">
+        <span class="identity-copy"><strong>Ahmet Baha Çepni</strong><span>Low-Level Network Engineer</span></span>
+      </a>
+      <a class="header-icon" href="https://github.com/AhmetBahaCepni" target="_blank" rel="noopener noreferrer" aria-label="Ahmet on GitHub (opens in a new tab)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 19.5c-4.3 1.3-4.3-2.2-6-2.5m12 5v-3.1a2.7 2.7 0 0 0-.7-2.1c2.4-.3 5-1.2 5-5.4a4.2 4.2 0 0 0-1.1-2.9 3.9 3.9 0 0 0-.1-2.9s-1-.3-3.1 1.1a10.6 10.6 0 0 0-5.8 0C6.6 3.3 5.6 3.6 5.6 3.6a3.9 3.9 0 0 0-.1 2.9 4.2 4.2 0 0 0-1.1 2.9c0 4.2 2.6 5.1 5 5.4a2.7 2.7 0 0 0-.7 2.1v3.1"/></svg>
+      </a>
+    </header>
 
+    <main id="main">
+      <section class="intro section" aria-labelledby="intro-title">
+        <p class="section-kicker reveal">Welcome to my corner of the internet <span aria-hidden="true">✳</span></p>
+        <h1 id="intro-title" class="intro-title reveal">I build software<br>close to the <em>system.</em></h1>
+        <div class="intro-copy reveal">
+          <p>Hi, I’m Ahmet. I’m a low-level network engineer who enjoys understanding how things work beneath the surface.</p>
+          <p>I care about the details you can measure and the experience you can feel — from packet flow and processes to the interface in front of you.</p>
+        </div>
+        <a class="text-link reveal" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
+      </section>
+
+      <section class="work section" id="work" aria-labelledby="work-title">
+        <div class="section-heading reveal"><h2 id="work-title">Selected projects</h2><span>01 — 04</span></div>
+        <div class="project-list">
+          <a class="project-link reveal" href="projects/cub3d.html" aria-label="Read about cub3D">
+            <span class="project-number">01</span><span class="project-copy"><strong>cub3D</strong><span>A 3D world rendered from a 2D map with raycasting in C.</span></span><span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="project-link reveal" href="projects/minishell.html" aria-label="Read about Minishell">
+            <span class="project-number">02</span><span class="project-copy"><strong>Minishell</strong><span>A Unix-style shell with pipes, redirections, and process control.</span></span><span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="project-link reveal" href="projects/irc.html" aria-label="Read about Internet Relay Chat">
+            <span class="project-number">03</span><span class="project-copy"><strong>Internet Relay Chat</strong><span>A C++ server for multiple clients and real-time messages.</span></span><span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="project-link reveal" href="projects/so-long.html" aria-label="Read about so_long">
+            <span class="project-number">04</span><span class="project-copy"><strong>so_long</strong><span>A small 2D maze game built in C.</span></span><span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="about section" id="about" aria-labelledby="about-title">
+        <div class="section-heading reveal"><h2 id="about-title">A little about me</h2><span>Behind the code</span></div>
+        <p class="about-lead reveal">I like turning complicated systems into something understandable.</p>
+        <p class="about-copy reveal">My projects have taken me through command-line tools, networked applications, and graphics. The common thread is curiosity: learning what happens under the hood, then making it work reliably.</p>
+        <div class="focus-tags reveal" aria-label="Areas of interest"><span>Networking</span><span>Systems</span><span>C / C++</span><span>Useful interfaces</span></div>
+      </section>
+
+      <section class="contact section" id="contact" aria-labelledby="contact-title">
+        <p class="section-kicker reveal">Have something in mind?</p>
+        <h2 id="contact-title" class="contact-title reveal">Let’s make it <em>work.</em></h2>
+        <p class="reveal">The best conversations start with a simple hello.</p>
+        <a class="contact-email reveal" href="mailto:ahmetbahacepni5335@gmail.com">ahmetbahacepni5335@gmail.com <span aria-hidden="true">↗</span></a>
+        <div class="social-links reveal">
+          <a href="https://github.com/AhmetBahaCepni" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/ahmet-baha-%C3%A7epni-aa11b01ab" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>© <span id="year">2026</span> Ahmet Baha Çepni</span><span>Built with care, and kept light.</span></footer>
+  </div>
+
+  <nav class="dock" aria-label="Primary navigation">
+    <a href="#home" data-section="home" aria-label="Home" title="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1zM9 21v-7h6v7"/></svg><span>Home</span></a>
+    <a href="#work" data-section="work" aria-label="Projects" title="Projects"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 10v10"/></svg><span>Work</span></a>
+    <a href="#about" data-section="about" aria-label="About" title="About"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg><span>About</span></a>
+    <a href="#contact" data-section="contact" aria-label="Contact" title="Contact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 3-7.3 18-3.6-7.1L3 10.3zM21 3 10.1 13.9"/></svg><span>Contact</span></a>
+  </nav>
+</body>
 </html>
