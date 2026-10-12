@@ -31,3 +31,19 @@ if ("IntersectionObserver" in window && motionVideos.length && !prefersReducedMo
   }, { threshold: 0.15 });
   motionVideos.forEach((video) => videoObserver.observe(video));
 }
+
+const contactForm = document.querySelector("[data-contact-form]");
+if (contactForm) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (!contactForm.reportValidity()) return;
+
+    const data = new FormData(contactForm);
+    const name = String(data.get("name") || "").trim();
+    const email = String(data.get("email") || "").trim();
+    const message = String(data.get("message") || "").trim();
+    const subject = encodeURIComponent(`Portfolio message from ${name}`);
+    const body = encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`);
+    window.location.href = `mailto:ahmetbahacepni5335@gmail.com?subject=${subject}&body=${body}`;
+  });
+}
